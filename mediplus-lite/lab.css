@@ -32,6 +32,8 @@ body {
 }
 
 .travel-item {
+    display: flex;
+    align-items: center;
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 2px solid #ccc;
@@ -42,20 +44,15 @@ body {
     border-bottom: none;
 }
 
-.wrapper {
-    display: flex;
-    align-items: flex-start;
-}
-
 figure img {
-    width: 80px;
-    height: 80px;
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
     border-radius: 5px;
     border: 2px solid #ccc;
 }
 
 .marg_right1 {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 p {
@@ -90,11 +87,13 @@ p {
 }
 
 /* Separator for Popular Places */
-.popular-place {
+/* .popular-place {
+    display: flex;
+    align-items: center;
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 2px solid #ccc;
-}
+} */
 
 /* Remove border for the last place */
 .popular-place:last-child {
@@ -110,3 +109,102 @@ p {
         width: 100%;
     }
 }
+
+/* Popular Places Section */
+.popular-place {
+    display: flex;
+    align-items: flex-start;  /* Aligns text to the top */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Image Styling */
+.popular-place figure img {
+    width: 250px;  /* Larger images */
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+/* Text Container */
+.popular-place .text-container {
+    flex: 1;
+    padding-left: 15px;
+}
+
+/* Hotel Name (Heading) */
+.popular-place h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #0056b3;
+}
+
+/* Description (5-6 lines) */
+.popular-place p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;  /* More spacing for readability */
+    max-width: 90%;
+}
+
+/* Read More Button */
+.popular-place .marker_2 {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 12px;
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hot Travel Section */
+.hot-travel {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc; /* Line separator */
+}
+
+/* Image Styling */
+.hot-travel figure img {
+    width: 140px;  /* Increased size */
+    height: 140px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+/* Text Container */
+.hot-travel .text-container {
+    flex: 1;
+    padding-left: 15px;
+}
+
+/* Travel Destination Heading */
+.hot-travel h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #0056b3;
+}
+
+/* Description */
+.hot-travel p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+/* Read More Button */
+.hot-travel .marker_1 {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 12px;
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+

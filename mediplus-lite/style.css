@@ -48,6 +48,9 @@ Version:	1.1
 /*=============================
 	Global CSS 
 ===============================*/
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
 	font-weight: 400;
@@ -262,7 +265,7 @@ body{
 }
 .header .top-link li{
 	display:inline-block;
-	margin-right:15px;
+	margin-right:12px;
 }
 .header .top-link li:last-child{
 	margin-right:0px;
@@ -310,6 +313,7 @@ body{
 .header .logo {
 	float: left;
 	margin-top: 18px;
+	width: 90%;
 }
 .header .navbar {
 	background: none;
@@ -394,7 +398,7 @@ body{
 	position: relative;
 	float: left;
 	margin-right: 30px;
-	padding-left: 55px;
+	padding-left: 45px;
 }
 .header .single-widget:last-child{
 	margin:0;
@@ -403,6 +407,7 @@ body{
 	margin:0;
 	padding:0;
 	margin-top: 7px;
+	
 }
 .header .single-widget i {
 	position: absolute;
@@ -590,6 +595,7 @@ body{
 	Start Hero Area CSS
 =============================*/
 .slider .single-slider {
+	margin-top:10px;
 	height: 600px;
 	background-size: cover;
 	background-position: center;

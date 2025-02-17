@@ -455,6 +455,10 @@ function displayResults(labs, testType) {
             <p><strong>Address:</strong> ${lab.address}</p>
             <p><strong>Distance:</strong> ${lab.distance.toFixed(2)} km</p>
             <p><strong>Price:</strong> ${price}</p>
+            <a href="appointment.html">
+                <button class="book-appointment-btn">Book Appointment</button>
+            </a>
+
         `;
 
         resultsContainer.appendChild(labElement);

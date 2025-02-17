@@ -247,6 +247,7 @@ const labs = [
 ];
 
 
+
 // Function to get the nearest lab based on location and test type
 function searchLabs() {
     const location = document.getElementById("location").value.trim();

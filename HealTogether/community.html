@@ -258,7 +258,62 @@
             
             
         </div>
-        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (window.location.hash) {
+                    let target = document.querySelector(window.location.hash);
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+            });
+            
+            function openForm() {
+                document.getElementById("form-section").style.display = "block";
+                document.getElementById("error-message").style.display = "none"; // Hide error message when the form opens
+            }
+            
+            function closeForm() {
+                document.getElementById("form-section").style.display = "none";
+            }
+            
+            function submitForm(event) {
+                event.preventDefault();
+            
+                // Get form values
+                let name = document.getElementById("name").value;
+                let story = document.getElementById("story").value;
+                let image = document.getElementById("image").files[0];
+            
+                // Check if required fields are filled
+                if (!name || !story) {
+                    document.getElementById("error-message").style.display = "block";
+                    return; // Stop form submission if required fields are empty
+                }
+            
+                // Create a new post dynamically
+                let newPost = document.createElement("div");
+                newPost.classList.add("community-post");
+            
+                newPost.innerHTML = `
+                    <p><strong>${name}</strong></p>
+                    ${image ? `<img src="${URL.createObjectURL(image)}" alt="Post Image">` : ""}
+                    <p class="community-content">${story.substring(0, 100)}... <span class="community-see-more" onclick="toggleText(this)">See More</span></p>
+                    <p class="community-full-content" style="display: none;">${story}</p>
+                `;
+            
+                // Add the new post to the container
+                document.getElementById("posts-container").appendChild(newPost);
+            
+                closeForm();
+            }
+            
+            function toggleText(span) {
+                let fullContent = span.parentElement.nextElementSibling;
+                fullContent.style.display = fullContent.style.display === "none" ? "block" : "none";
+                span.innerText = span.innerText === "See More" ? "See Less" : "See More";
+            }
+            </script>
         
         
         <script>

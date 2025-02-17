@@ -4917,6 +4917,212 @@ body{
   .custom-donate-button {
 	text-shadow: none !important;
   }
+  .share-story-btn {
+	background: #1f76bd;
+	color: #fff;
+	border-radius: 0;
+	border: 0.3px solid #1f76bd;
+	padding: 10px 25px;
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.3s;
+	margin-top:3px;
+  }
+  
+  .share-story-btn:hover {
+	background: #fff;
+	color: #1f76bd;
+	text-decoration: none;
+  }
+  .community-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 2px solid #ddd;
+}
+.form-section {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+}
+
+.form-container {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	color: #1f76bd;
+}
+
+.form-container h2 {
+	text-align: center;
+}
+
+.form-container input,
+.form-container textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-container button {
+	background-color: #1f76bd;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form-container button:hover {
+	background-color: #14588c;
+}
+
+.required {
+	color: red;
+}
+/* Main container */
+.community-container {
+    display: flex;
+}
+
+/* Left Panel (Posts Section) */
+.community-left-panel {
+    width: 70%;
+    padding: 20px;
+}
+
+/* Right Panel (Community Chat Section) */
+.community-right-panel {
+    width: 30%;
+    padding: 20px;
+}
+
+/* Group List Styles */
+.community-group-list {
+    margin-top: 20px;
+}
+
+.community-group {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.community-group:hover {
+    background-color: #f0f0f0;
+}
+
+.community-group.selected {
+    background-color: #f2f2f2; /* Gray highlight for selected chat */
+}
+
+/* Chat Popup */
+.chat-popup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-header {
+    padding: 10px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Chat Content */
+.chat-content {
+    padding: 10px;
+    overflow-y: auto;
+    height: 280px;
+}
+
+.chat-bubble {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    max-width: 80%;
+}
+
+.chat-input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chat-input-container textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    width: 100%;
+    resize: none;
+}
+
+.chat-input-container button {
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Highlight selected chat */
+.community-group.selected {
+    background-color: #f0f0f0;
+}
+.chat-bubble.received {
+    background-color: #e0e0e0; /* Light gray for received messages */
+    color: black;
+    align-self: flex-start; /* Align received messages to the left */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 60%;
+}
+
+/* Chat bubble for sent messages */
+.chat-bubble.sent {
+    background-color: #007bff; /* Blue for sent messages */
+    color: white;
+    align-self: flex-end; /* Align sent messages to the right */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 60%;
+}
+.chat-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-height: 400px; /* You can adjust this based on your design */
+    overflow-y: auto;
+}
   
   
   

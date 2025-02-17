@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Search</title>
+    <style>
+        /* Add your styling here */
+    </style>
+</head>
+<body>
+    <h1>Find Nearby Labs</h1>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" placeholder="Enter location"><br><br>
+
+    <label for="testType">Test Type:</label>
+    <select id="testType">
+        <option value="">Select a test</option>
+        <option value="PET Scan">PET Scan</option>
+        <option value="MRI">MRI</option>
+        <option value="NGS">Next-Generation Sequencing (NGS)</option>
+        <option value="FISH">Fluorescence In Situ Hybridization (FISH)</option>
+        <option value="Liquid Biopsy">Liquid Biopsy</option>
+    </select><br><br>
+
+    <button onclick="searchLabs()">Search</button>
+
+    <div id="results"></div>  <!-- Results container -->
+
+
+    <script src="js/labs.js"></script>
+</body>
+</html>
